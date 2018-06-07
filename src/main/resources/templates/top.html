@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja-jp" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Authorization Server Top</title>
+  </head>
+
+  <body>
+    <h1>TOPページ</h1>
+    <h2>Login</h2>
+    <form th:action="@{/login}" method="post">
+      <button>Login</button>
+    </form>
+  </body>
+</html>

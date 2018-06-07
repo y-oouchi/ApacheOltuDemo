@@ -1,0 +1,14 @@
+server:
+  port: 10001
+
+logging:
+  path: C:\project\ssoDemo\logs
+  config: classpath:logback-spring.xml
+
+sso.demo: 
+  client-id: ssoDemo-client-id
+  client-secret: ssoDemo-client-secret
+  authorization-uri: http://localhost:9991/auth/oauth/authorize
+  access-token-uri: http://localhost:9991/auth/oauth/token
+  user-info-uri: http://localhost:9992/resource/user-info
+  authorization-logout-uri: http://localhost:9991/auth/logout
